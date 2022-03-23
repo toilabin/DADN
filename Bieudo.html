@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ds.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>Home</title>
+</head>
+<body >
+  <!-- Navbar -->
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark">
+        <img src="/img/logo.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">
+                <i class="fa fa-home"></i>
+                Home
+                <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            
+          </ul>
+          <ul>
+            <div class="Name" style="color: #EFE955; margin-right: 450px;">
+              <h1>Hệ thống báo cháy</h1>
+            </div>
+          </ul>
+          
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-bell">
+                  <span class="badge badge-info">11</span>
+                </i>
+                Thông báo
+              </a>
+            </li>
+            
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <a href="/Login.html" type="button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Login</a>
+          </form> -->
+        </div>
+      </nav>
+
+  <!-- End Navbar -->
+  <div class="content">
+    <div class="location">
+        <div class="diadiem">
+            <select id="location" >
+                <option value="" selected disabled hidden>Chọn địa điểm</option>
+                <option value="t1">Tòa 1</option>
+                <option value="t2">Tòa 2</option>
+                <option value="t3">Tòa 3</option>
+            </select>
+        </div>
+        
+        <div class="add"><button type="button" class="btn btn-primary">Thêm địa điểm</button></div>
+        <div class="deletedd">
+          <a class="nav-link" href="#" style="color: red;">
+              <i class="bi bi-trash"></i>
+                  Xóa
+              </a>
+      </div>
+    </div>
+    <div class="listchiso">
+        <div class="chiso"><a href="/DSchiso.html" type="button" class="btn btn-primary">Chỉ số</a></div>
+        <div class="suco"><a href="/DSsuco.html" type="button" class="btn btn-primary">Sự cố</a></div>
+        <div class="qly"><a href="/Qlythietbi.html" type="button" class="btn btn-primary">Quản lý thiết bị</a></div>
+        <div class="admin"><a href="#" type="button" class="btn btn-primary">Cấp quyền admin</a></div>
+    </div>
+        
+    <div class="bieudo" style="height: 500px; margin: 0">
+        <div id="container" style="height: 100%"></div>      
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/dist/echarts.min.js"></script>
+        <script type="text/javascript">
+            var dom = document.getElementById("container");
+            var myChart = echarts.init(dom);
+            var app = {};
+            var option;
+            option = {
+              xAxis: {
+                type: 'category',
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+              },
+              yAxis: {
+                type: 'value'
+              },
+              series: [
+                {
+                  data: [150, 230, 224, 218, 135, 147, 260],
+                  type: 'line'
+                }
+              ]
+            };
+
+            if (option && typeof option === 'object') {
+                myChart.setOption(option);
+            }
+        </script>
+    </div>
+
+    <div class="bieudo">
+        <a href="#" type="button" class="btn btn-primary">Biểu đồ</a>
+    </div>
+  </div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</body>
+</html>
