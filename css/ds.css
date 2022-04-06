@@ -4,6 +4,16 @@ body{
 .content{
     margin: 20px;
 }
+.add{
+    margin-left: 20px;
+    margin-top: 4px;
+}
+.deletedd{
+    margin-top: 4px;
+}
+.Name{
+    margin-top: 20px;
+}
 .location{
     display: flex;
     margin-top: 20px;
@@ -17,6 +27,10 @@ body{
 .listchiso{
     display: flex;
     margin-top: 20px;
+}
+.chiso{
+    display: flex;
+    margin-right: 15px;
 }
 .table{
   margin-top: 20px;
