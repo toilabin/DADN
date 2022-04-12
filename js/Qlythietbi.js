@@ -17,7 +17,11 @@ function switchbtn (checked, name) {
             'Content-Type':'application/json',
             'Host':'io.adafruit.com',
             'Content-Type':'application/json',
+<<<<<<< Updated upstream
             'X-AIO-Key':'aio_kNjE82LbtMpdxOd6eicNWnjuQI9s'
+=======
+            'X-AIO-Key':'aio_DWUn70yPgVyjdaoeS3MSHJ6Xx0vI'
+>>>>>>> Stashed changes
         },
         data:JSON.stringify({"value":str}),
         processData:false,
