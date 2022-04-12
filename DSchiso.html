@@ -50,9 +50,6 @@
             </li>
             
           </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <a href="/Login.html" type="button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Login</a>
-          </form> -->
         </div>
       </nav>
 
@@ -74,7 +71,7 @@
               <i class="bi bi-trash"></i>
                   Xóa
               </a>
-      </div>
+        </div>
     </div>
     <div class="listchiso">
         <div class="chiso"><a href="/DSchiso.html" type="button" class="btn btn-primary">Chỉ số</a></div>
@@ -86,25 +83,17 @@
     </div>
         
     <div class="table">
-      <table id="infoTableTemp">
-          <tr>
-            <th>Thời gian</th>
-            <th>Nhiệt độ(độ C)</th>
-          </tr>
-        </table>
+      <div id="name" style="color: red; font-weight: bold !important;">Bảng đo nhiệt độ (độ C)</div>
+      <div id="container1" style="height: 500px; width: 100%"></div>
     </div>
 
     <div class="table">
-      <table id="infoTableGas">
-          <tr>
-            <th>Thời gian</th>
-            <th>Nồng độ khí Gas(ppm)</th>
-          </tr>
-        </table>
+      <div id="name" style="color: red; font-weight: bold !important;">Bảng đo nồng độ khí Gas (ppm)</div>
+      <div id="container2" style="height: 500px; width: 100%"></div>
     </div>
 
-    <div class="bieudo">
-        <a href="Bieudo.html" type="button" class="btn btn-primary">Biểu đồ</a>
+    <div class="lichsu">
+        <a href="History.html" type="button" class="btn btn-primary">Lịch sử</a>
     </div>
   </div>
 
@@ -191,11 +180,6 @@
     <!-- END Modal add địa điểm-->
 
 
-
-
-
-
-
   <!-- Start Footer -->
   <footer class="bg-dark" id="tempaltemo_footer">
     <div class="container">
@@ -218,19 +202,6 @@
                     </li>
                 </ul>
             </div>
-  
-            <!-- <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                    <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                    <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                    <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                    <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                    <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                    <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
-                </ul>
-            </div> -->
   
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
@@ -300,6 +271,7 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/dist/echarts.min.js"></script>
   <script src="/js/GetApiTemp.js"></script>
   <script src="/js/GetApiGas.js"></script>
 
